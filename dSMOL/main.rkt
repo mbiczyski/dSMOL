@@ -1,0 +1,18 @@
+(module main racket
+  (require "simulation.rkt")
+  (require "optimisation.rkt")
+  (require "libraryoptimisation.rkt")
+  (require "default.rkt")
+  (require "pid.rkt")
+  (require "environment/environmentcontrol.rkt")
+  (require "environment/kinematicthreat.rkt")
+  (require "environment/dynamicobject.rkt")
+  (require "environment/drone.rkt")
+  (require "environment/dynamicthreat.rkt")
+
+  (provide (all-from-out "simulation.rkt")
+           (all-from-out "optimisation.rkt")
+           (all-from-out "libraryoptimisation.rkt")
+           (all-from-out "default.rkt")
+           (all-from-out "pid.rkt")
+           (all-from-out "environment/environmentcontrol.rkt")))
